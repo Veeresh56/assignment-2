@@ -8,12 +8,12 @@ function SearchBar() {
     }
 
     return(
-        <div style={{ textAlign: "center", marginTop: "40px" }}>
-            <h2>Search Bar</h2>
-            <input type = "text" onChange={handleInputChange} placeholder='Search...' />
-            <p>Uppercase Output: {searchText.toUpperCase()}</p>
-        </div>
-    );
+    <div className="point-box">
+      <h2>Search Bar</h2>
+      <input className="app-input" type="text" onChange={handleInputChange} placeholder="Search..."/>
+      <p className="result-text">Uppercase Output: {searchText.toUpperCase()}</p>
+    </div>
+  );
 }
 
 export default SearchBar;

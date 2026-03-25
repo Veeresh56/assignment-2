@@ -2,7 +2,7 @@ import UserProfile from "../components/UserProfile";
 
 function Dashboard() {
   return (
-    <div style={{ textAlign: "center", marginTop: "40px" }}>
+    <div className="point-box">
         <h2>Dashboard</h2>
 
         <div className="dashboard-container">

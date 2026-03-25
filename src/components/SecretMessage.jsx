@@ -8,14 +8,14 @@ function SecretMessage() {
   }
 
   return (
-    <div style={{ textAlign: "center", marginTop: "40px" }}>
+    <div className="point-box">
       <h2>Secret Message</h2>
-      <label>
+      <label className="checkbox-label">
         <input type = "checkbox" checked={isChecked} onChange={handleChange}/>
         Show Secret Message:
       </label>
       
-      {isChecked && <p>APJ abdul kalam is my role model</p>}
+      {isChecked && <p className="secret-message">APJ abdul kalam is my role model</p>}
     </div>
   )
 }

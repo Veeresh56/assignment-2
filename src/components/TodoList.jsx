@@ -7,11 +7,11 @@ function TodoList() {
   ];
 
   return (
-    <div style={{ textAlign: "center", marginTop: "40px" }}>
+    <div className="point-box">
       <h2>Todo List</h2>
-      <ul>
+      <ul className="todo-list">
         {todos.map((todo) => (
-          <li key={todo.id}>
+          <li key={todo.id} className="todo-item">
             {todo.task} <button>Delete</button>
           </li>
         ))}

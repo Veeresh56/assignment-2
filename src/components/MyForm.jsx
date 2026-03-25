@@ -8,11 +8,10 @@ function MyForm() {
   }, []);
 
   return (
-    <div style={{ textAlign: "center", marginTop: "40px" }}>
+    <div className="point-box">
       <h2>User Form</h2>
-      <input type="text" ref={InputRef} placeholder="Type your name..."/>
-      <br /><br />
-      <input type="email" placeholder="Enter your email" />
+      <input className="app-input" type="text" ref={InputRef} placeholder="Type your name..." />
+      <input className="app-input" type="email" placeholder="Enter your email" />
     </div>
   );
 }

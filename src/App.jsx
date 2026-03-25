@@ -11,15 +11,15 @@ import TodoList from './components/TodoList'
 import MyForm from './components/MyForm'
 function App() {
 
-  return(<>
+  return(<div className="app-container">
   <Dashboard/>
   <CounterApp/>
   <SearchBar/>
   <SecretMessage/> 
   <TodoList/>
   <MyForm/>
-  </>)
+  </div>);
 
 }
 
-export default App
+export default App;

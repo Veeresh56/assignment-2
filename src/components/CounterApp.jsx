@@ -17,14 +17,15 @@ function CounterApp() {
   }
 
   return (
-    <div style={{ textAlign: "center", marginTop: "40px" }}>
+    <div className="point-box">
       <h2>Counter App</h2>
-      <h2>{count}</h2>
+      <div className="counter-value">{count}</div>
 
-
-      <button onClick={increment}>Increment</button>
-      <button onClick={decrement} style={{ marginLeft: "10px" }} >Decrement</button>
-      <button onClick={reset} style={{ marginLeft: "10px" }}>Reset</button>
+      <div className="button-group">
+        <button onClick={increment}>Increment</button>
+        <button onClick={decrement} style={{ marginLeft: "10px" }} >Decrement</button>
+        <button onClick={reset} style={{ marginLeft: "10px" }}>Reset</button>
+      </div>
     </div>
   )
 }
